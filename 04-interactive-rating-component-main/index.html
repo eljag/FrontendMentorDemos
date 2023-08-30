@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=Overpass:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main>
+            <!-- Rating state start -->
+            <article class="card__rating">
+                <div class="circle__icon">
+                    <img src="images/icon-star.svg" alt="Rating icon" class="image__icon"/>
+                </div>
+                <section class="rating__description">
+                    <h2 class="rating__title">How did we do?</h2>
+
+                    <p class="rating__inf">
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our
+                        offering!
+                    </p>
+                </section>
+
+                <section class="rating__values">
+                    <div class="values__number">
+                        <span class="score" data-id="1">1</span>
+                        <span class="score" data-id="2">2</span>
+                        <span class="score" data-id="3">3</span>
+                        <span class="score" data-id="4">4</span>
+                        <span class="score" data-id="5">5</span>
+                    </div>
+
+                    <button class="btn">SUBMIT</button>
+                </section>
+            </article>
+
+            <!-- Rating state end -->
+
+            <!-- Thank you state start -->
+
+            <article class="card__thankyou card__rating active">
+                <header class="header__thankyou">
+                    <img src="images/illustration-thank-you.svg" alt="thankyou icon" class="thankyou__img">
+                    <div class="final__rating">
+                        <p>
+                            You selected <span class="points">4</span>
+                             out of 5
+                        </p>
+                    </div>
+                </header>
+                <section class="thankyou__copy">
+                    <h2 class="thankyou__title">
+                        Thank you! 
+                    </h2>
+                    <p class="description__thankyou">
+                        We appreciate you taking the time to give a
+                        rating. If you ever need more support, don’t hesitate to get in
+                        touch!
+                    </p>
+                </section>
+            </article>
+
+            <!-- Thank you state end -->
+
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="https://www.frontendmentor.io/profile/eljag">Ernesto Acosta</a>.
+            </div>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
+</html>

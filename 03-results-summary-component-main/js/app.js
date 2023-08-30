@@ -23,6 +23,7 @@ function avgScores(dataIn) {
     return average.toFixed();
 }
 
+
 function renderItemsFeatures(dataIn) {
     const fragment = document.createDocumentFragment();
     const cardStatsElement = document.getElementById("card-stats");
@@ -71,9 +72,6 @@ function renderItemsFeatures(dataIn) {
         statElement.append(statScoreElement);
 
         fragment.append(statElement);
-
-        /** Preview */
-        // console.log(statElement);
     });
 
     cardStatsElement.append(fragment);

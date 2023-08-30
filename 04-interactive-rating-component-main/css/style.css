@@ -1,0 +1,222 @@
+:root{
+    /*LAYOUTS*/
+    --min-width: 375px;
+    --max-width: 1440px;
+
+    /*PRIMARY COLOR*/
+    --orange: hsl(25, 97%, 53%);
+
+    /*NEUTRAL COLORS*/
+
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: rgb(124, 135, 152);
+    --dark-blue: rgb(37, 45, 55);
+    --very-dark-blue: rgb(18, 20, 23);
+
+
+    /*FONT SIZES*/
+    --font-size:15px;
+
+    --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+    --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+    --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+    --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main,
+.card__rating,
+.circle__icon,
+.rating__description,
+.rating__values,
+.values__number,
+.score,
+.card__thankyou,
+.header__thankyou{
+    display: flex;
+}
+
+main,
+.card__rating,
+.rating__description,
+.rating__values,
+.header__thankyou{
+    flex-direction: column;
+}
+
+main,
+.circle__icon,
+.score{
+    justify-content: center;
+}
+
+main,
+.btn{
+    font-family: "Overpass";
+}
+
+.rating__inf,
+.score{
+     color: var(--light-gray);
+}
+
+
+main{
+    align-items: center;
+    height: 100vh;
+    padding: 0 1.1rem;
+    font-weight: 500;
+    background-color: black;
+    gap: 3rem;
+}
+
+.active{
+    display: none;
+}
+
+.card__rating{
+    /* height: 23em; */
+    max-width: 350px;
+    /* width: 21rem; */
+    /* margin: 0 1rem; */
+    padding: 1.5rem 1.3rem;
+    background-color: var(--very-dark-blue);
+    border-radius: .5em;
+}
+
+
+.circle__icon{
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-bottom: 1.2rem;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+}
+
+.image__icon{
+    width: .7rem;
+    height: .7rem;
+}
+
+.rating__description{
+    gap: .7em;
+    margin-bottom: 1.5rem;
+}
+
+.rating__title{
+    font-weight: 500;
+    color: var(--white);
+    font-size: var(--step-1);
+}
+
+.rating__inf{
+    max-width: 257px;
+    font-size: var(--step--2);
+    line-height: 1.5;
+}
+
+.rating__values{
+    gap: 1.2rem;
+}
+
+.values__number{
+    justify-content: space-between;
+}
+
+.score{
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: var(--step--2);
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+
+
+.btn{
+    padding: .8rem 0;
+    font-size: var(--step--2);
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+
+.attribution{
+    font-size: var(--step--2);
+    color: var(--white);
+}
+
+.active__value{
+    background-color: var(--orange);
+}
+
+.card__thankyou{
+    gap: 1rem;
+    max-width: 300px;
+    /* padding: 2.5rem 1rem; */
+}
+
+.header__thankyou{
+    
+    align-items: center;
+    gap: 2rem;
+}
+
+.thankyou__img{
+    max-width: 100%;
+    height: auto;
+}
+
+.final__rating{
+    font-weight: 500;
+    font-size: var(--step--1);
+    padding: .4rem .5rem;
+    border-radius: 1.5rem;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+}
+
+.thankyou__title{
+    margin-bottom: .7rem;
+    text-align: center;
+    font-size: var(--step-1);
+    font-weight: 700;
+    color: var(--white);
+}
+
+.description__thankyou{
+    text-align: center;
+    line-height: 1.4;
+    font-size: var(--step--2);
+    color: var(--medium-gray);
+}
+
+@media screen and (min-width:420px){
+    .score,
+    .btn{
+        cursor: pointer;
+    }
+
+    .score:hover{
+        background-color: var(--medium-gray);
+    }
+
+    .btn:hover{
+        color: var(--orange);
+        background-color: var(--white);
+    }
+    
+}
