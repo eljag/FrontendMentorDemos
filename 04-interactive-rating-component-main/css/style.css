@@ -55,7 +55,8 @@ main,
 
 main,
 .circle__icon,
-.score{
+.score,
+.card__thankyou{
     justify-content: center;
 }
 
@@ -162,44 +163,48 @@ main{
 }
 
 .card__thankyou{
-    gap: 1rem;
-    max-width: 300px;
+    align-items: center;
+    gap: 1.8rem;
+    width: 18.74rem;
+    flex-basis: 20.2rem;
     /* padding: 2.5rem 1rem; */
 }
 
 .header__thankyou{
-    
     align-items: center;
-    gap: 2rem;
+    gap: 1.7rem;
 }
 
 .thankyou__img{
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
+    width: 8rem;
+    height: 5rem;
 }
 
 .final__rating{
     font-weight: 500;
-    font-size: var(--step--1);
-    padding: .4rem .5rem;
+    font-size: var(--step--2);
+    padding: .4rem .8rem;
     border-radius: 1.5rem;
-    background-color: var(--dark-blue);
+    background-color: var(--medium-gray);
     color: var(--orange);
 }
 
 .thankyou__title{
     margin-bottom: .7rem;
     text-align: center;
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     font-weight: 700;
     color: var(--white);
 }
 
 .description__thankyou{
+    width: 17rem;
     text-align: center;
     line-height: 1.4;
-    font-size: var(--step--2);
-    color: var(--medium-gray);
+    font-size: .75rem;
+    color: var(--light-gray);
 }
 
 @media screen and (min-width:420px){
@@ -220,7 +225,7 @@ main{
 
     .image__icon{
         width: .8rem;
-        height: .8rem;
+        height: 1rem;
     }
 
     .rating__title{
@@ -242,6 +247,12 @@ main{
     .btn:hover{
         color: var(--orange);
         background-color: var(--white);
+    }
+
+    .card__thankyou{
+        flex-basis: 20.1rem;
+        width: 20rem;
+        padding: 1.3rem;
     }
     
 }
