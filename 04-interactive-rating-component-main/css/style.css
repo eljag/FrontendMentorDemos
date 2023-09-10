@@ -10,7 +10,7 @@
 
     --white: hsl(0, 0%, 100%);
     --light-gray: hsl(217, 12%, 63%);
-    --medium-gray: rgb(124, 135, 152);
+    --medium-gray: rgb(87, 93, 102);
     --dark-blue: rgb(37, 45, 55);
     --very-dark-blue: rgb(18, 20, 23);
 
@@ -73,9 +73,8 @@ main,
 main{
     align-items: center;
     height: 100vh;
-    padding: 0 1.1rem;
     font-weight: 500;
-    background-color: black;
+    background-color: var(--very-dark-blue);
     gap: 3rem;
 }
 
@@ -84,13 +83,11 @@ main{
 }
 
 .card__rating{
-    /* height: 23em; */
-    max-width: 350px;
+    max-width: 360px;
     /* width: 21rem; */
-    /* margin: 0 1rem; */
     padding: 1.5rem 1.3rem;
-    background-color: var(--very-dark-blue);
-    border-radius: .5em;
+    background-color: var(--dark-blue);
+    border-radius: 1.3em;
 }
 
 
@@ -99,7 +96,7 @@ main{
     width: 2.3rem;
     height: 2.3rem;
     margin-bottom: 1.2rem;
-    background-color: var(--dark-blue);
+    background-color: var(--medium-gray);
     border-radius: 50%;
 }
 
@@ -135,12 +132,12 @@ main{
 
 .score{
     align-items: center;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: var(--step--2);
     color: var(--white);
     border-radius: 50%;
-    background-color: var(--dark-blue);
+    background-color: var(--medium-gray);
 }
 
 
@@ -161,7 +158,7 @@ main{
 }
 
 .active__value{
-    background-color: var(--medium-gray);
+    background-color: var(--light-gray);
 }
 
 .card__thankyou{
@@ -211,8 +208,35 @@ main{
         cursor: pointer;
     }
 
+    .card__rating{
+        width: 20rem;
+        padding: 1.9rem;
+    }
+
+    .circle__icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .image__icon{
+        width: .8rem;
+        height: .8rem;
+    }
+
+    .rating__title{
+        font-size: var(--step-1);
+    }
+
+    .rating__inf{
+        font-size: .7rem;
+    }
+
     .score:hover{
         background-color: var(--orange);
+    }
+
+    .btn{
+        padding: .6rem 0;
     }
 
     .btn:hover{
